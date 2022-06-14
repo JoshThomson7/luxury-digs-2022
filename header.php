@@ -28,6 +28,8 @@ $favicon = get_field('header_favicon','option');
     <link href="<?php echo get_template_directory_uri(); ?>/css/jquery.mmenu.all.css" rel="stylesheet" />
     <link href="<?php echo get_template_directory_uri(); ?>/css/lightbox.min.css" rel="stylesheet" />
     <link href="<?php echo get_template_directory_uri(); ?>/css/lightbox.min.css" rel="stylesheet" />
+    <link href="<?php echo get_template_directory_uri(); ?>/style-base.css" rel="stylesheet" />
+
     <!-- <link href="<?php //echo get_template_directory_uri(); ?>/css/style.css" rel="stylesheet" /> -->
     <!-- <link href="<?php //echo get_template_directory_uri(); ?>/css/responsive.css" rel="stylesheet" /> -->
 	<?php wp_head(); ?>

@@ -1,0 +1,40 @@
+//  HEADER BORDER
+header{
+    border-bottom: none!important; padding: 5px 0 0!important;
+}
+
+header .logo{
+    margin-bottom: 16px!important;
+}
+
+// BUTTONS
+.btn, .btn:visited{
+    box-shadow: none!important;
+}
+
+// BLOG HOME
+.blog-content h5{
+    min-height: 80px;
+}
+
+.blog-block{
+    border-radius: 3px;
+}
+
+.blog-img{
+    border-radius: 3px 3px 0 0; 
+}
+
+.blog-img img{
+    border-radius: 3px 3px 0 0; 
+}
+
+// ACCREDITATION LOGOS
+.client-inner.about-client-inner{
+    display: flex; justify-content: space-evenly;
+}
+
+// PROPERTY SEARCH
+.property-main .wre-items li .inner-container .address{
+    min-height: 67px; display: flex; align-items: center;
+}

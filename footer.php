@@ -27,7 +27,7 @@
                                 if( $socials ) { 
                                 foreach ( $socials as $social ) { 
                                     ?>
-                                    <li><a href="<?php echo $social['footer_social_share_link']; ?>"><i class="<?php echo $social['footer_social_share_class']; ?>" aria-hidden="true"></i></a></li>
+                                    <li><a href="<?php echo $social['footer_social_share_link']; ?>" target="_blank"><i class="<?php echo $social['footer_social_share_class']; ?>" aria-hidden="true"></i></a></li>
                                 <?php } }?>
                             </ul>
                         </div>
