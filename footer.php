@@ -21,16 +21,6 @@
                        <?php $logo = get_field('footer_logo','option'); ?>
                         <div class="logo"><a href="<?php echo esc_url ( home_url('/') ); ?>"><img src="<?php echo $logo['url']; ?>" alt=" PPC Capital"></a></div>
                         <p><?php echo get_field('fooer_below_logo_content','option');?></p>
-                        <div class="social-block">
-                            <ul>
-                                <?php $socials = get_field('footer_social_share_link','option'); 
-                                if( $socials ) { 
-                                foreach ( $socials as $social ) { 
-                                    ?>
-                                    <li><a href="<?php echo $social['footer_social_share_link']; ?>" target="_blank"><i class="<?php echo $social['footer_social_share_class']; ?>" aria-hidden="true"></i></a></li>
-                                <?php } }?>
-                            </ul>
-                        </div>
                     </div><!-- footer one end -->
                     <div class="footer-two right">
                         <div class="footer-two-inner">
@@ -66,7 +56,17 @@
                                 <?php if( get_field('footer_follow_us_title','option') ) { ?>
                                 <h5><?php echo get_field('footer_follow_us_title','option'); ?></h5>
                                 <?php } ?>
-                                <div class="follow-block"><img src="<?php echo get_template_directory_uri(); ?>/images/footer-follow.png" alt=""></div>
+                                <div class="social-block">
+                                    <ul>
+                                        <?php $socials = get_field('footer_social_share_link','option'); 
+                                        if( $socials ) { 
+                                        foreach ( $socials as $social ) { 
+                                            ?>
+                                            <li><a href="<?php echo $social['footer_social_share_link']; ?>" target="_blank"><i class="<?php echo $social['footer_social_share_class']; ?>" aria-hidden="true"></i></a></li>
+                                        <?php } }?>
+                                    </ul>
+                                </div>
+                                <!-- <div class="follow-block"><img src="<?php echo get_template_directory_uri(); ?>/images/footer-follow.png" alt=""></div> -->
                             </div>
                         </div>
                     </div><!-- footer two end -->

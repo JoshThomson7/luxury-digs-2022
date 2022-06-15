@@ -37,3 +37,7 @@ header .logo {
   display: flex;
   align-items: center;
 }
+
+.social-block {
+  min-width: 130px;
+}
