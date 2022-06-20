@@ -39,13 +39,17 @@ get_header();
                           }?>
                         <div class="blog-block">
                             <div class="blog-inner">
-                            <div class="blog-img"><img src="<?php echo $img; ?>" alt="images"></div>
-                            <div class="blog-content">
-                                <h5><?php the_title(); ?></h5>
-                                <div class="date"><p><?php echo get_the_date('d-m-Y'); ?></p></div>
-                                <p><?php echo wp_trim_words(get_the_excerpt(), '10' ,'...'); ?></p>
-                                <a href="<?php echo get_the_permalink(); ?>" class="btn">More Info</a>
-                            </div>
+                                <div class="blog-img">
+                                    <img src="<?php echo $img; ?>" alt="images">
+                                    <p class="news-sticker">News</p>
+                                </div>
+                                <div class="blog-content">
+                                    <a href="<?php echo get_the_permalink(); ?>"><h5><?php the_title(); ?></h5></a>
+                                    <div class="category"><?php the_category(); ?></div>
+                                    <p class="content"><?php echo wp_trim_words(get_the_excerpt(), '20' ,'...'); ?></p>
+                                    <div class="date"><p><?php echo get_the_date('d-m-Y'); ?></p></div>
+                                    <!-- <a href="<?php echo get_the_permalink(); ?>" class="btn">More Info</a> -->
+                                </div>
                             </div>
                         </div>
                         <?php endwhile;

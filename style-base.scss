@@ -13,7 +13,7 @@ header .logo{
 }
 
 // BLOG HOME
-.blog-content h5{
+.home .blog-content h5{
     min-height: 80px;
 }
 
@@ -28,6 +28,62 @@ header .logo{
 .blog-img img{
     border-radius: 3px 3px 0 0; 
 }
+
+// BLOG RESTRUCTURE
+.blog-news-page{
+    .blog-block{
+        width: 100%!important;
+
+        .blog-inner{
+            display: flex;
+
+            .blog-img{
+                width: 40%;
+
+                .news-sticker{
+                    position: absolute; top: 0; background: black; color: white; padding: 5px 10px; font-weight: 700;
+                }
+            }
+
+            .blog-content{
+                width: 60%; padding: 20px!important; display: flex; flex-direction: column; justify-content: center;
+
+                .category{
+
+                    .post-categories{
+                        margin: 0;
+
+                        li{
+                            list-style: none;
+
+                            a{
+                                color: #16267b;
+                            }
+                        }
+                    }
+                }
+
+                .content{
+                    margin-top: 10px;
+                }
+
+                .date{
+                    margin-top: 10px;
+
+                    p{
+                        color: #626262!important;
+                    }
+                }
+
+                .btn{
+                    position: relative!important; bottom: 0!important; left: 0!important;
+                }
+            }
+        }
+    }
+}
+
+
 
 // ACCREDITATION LOGOS
 .client-inner.about-client-inner{
