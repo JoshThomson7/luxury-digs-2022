@@ -1,30 +1,82 @@
 header {
   border-bottom: none !important;
   padding: 5px 0 0 !important;
+  background: rgba(255, 255, 255, 0.7) !important;
+  position: fixed !important;
 }
 
 header .logo {
   margin-bottom: 16px !important;
 }
 
+.banner-main {
+  align-items: flex-end !important;
+}
+
+.banner-content {
+  margin-bottom: 20px;
+}
+
 .btn, .btn:visited {
   box-shadow: none !important;
+}
+
+.banner-content {
+  border-radius: 10px;
 }
 
 .home .blog-content h5 {
   min-height: 80px;
 }
 
-.blog-block {
+.home .blog-block {
   border-radius: 3px;
 }
 
-.blog-img {
+.home .blog-img {
   border-radius: 3px 3px 0 0;
 }
 
-.blog-img img {
-  border-radius: 3px 3px 0 0;
+.home .blog-img:after {
+  border-radius: 10px;
+}
+
+.home .blog-img img {
+  border-radius: 10px 10px 0 0;
+}
+
+.blog-slider .slick-track {
+  padding: 10px 0;
+}
+.blog-slider .slick-track .slick-slide {
+  border-radius: 10px;
+}
+.blog-slider .slick-track .slick-slide div {
+  border-radius: 10px;
+}
+
+.about-section .heading {
+  margin-bottom: 20px !important;
+}
+
+.client-section .heading-two h3 {
+  font-size: 14px !important;
+}
+
+.listing-block-part .each-block .list-block, .listing-block-part .each-block .list-block .block-img img {
+  border-radius: 10px;
+}
+
+.property-main .wre-items.grid-view li .inner-container .image img {
+  border-radius: 10px 10px 0 0;
+}
+
+.property-main .wre-items.grid-view li .inner-container {
+  border-radius: 10px;
+}
+
+.gallery-block img {
+  border-radius: 10px;
 }
 
 .blog-news-page .blog-block {
@@ -32,9 +84,16 @@ header .logo {
 }
 .blog-news-page .blog-block .blog-inner {
   display: flex;
+  border-radius: 10px;
 }
 .blog-news-page .blog-block .blog-inner .blog-img {
   width: 40%;
+}
+.blog-news-page .blog-block .blog-inner .blog-img:after {
+  border-radius: 10px;
+}
+.blog-news-page .blog-block .blog-inner .blog-img img {
+  border-radius: 10px;
 }
 .blog-news-page .blog-block .blog-inner .blog-img .news-sticker {
   position: absolute;
@@ -75,6 +134,10 @@ header .logo {
   left: 0 !important;
 }
 
+.single-post .about-section {
+  padding-top: 140px;
+}
+
 .client-inner.about-client-inner {
   display: flex;
   justify-content: space-evenly;
@@ -88,4 +151,8 @@ header .logo {
 
 .social-block {
   min-width: 130px;
+}
+
+.footer-two-inner > div:first-child {
+  width: 30%;
 }

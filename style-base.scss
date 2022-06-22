@@ -1,10 +1,18 @@
 //  HEADER BORDER
 header{
-    border-bottom: none!important; padding: 5px 0 0!important;
+    border-bottom: none!important; padding: 5px 0 0!important; background: rgba(255, 255, 255, 0.7)!important; position: fixed!important;
 }
 
 header .logo{
     margin-bottom: 16px!important;
+}
+
+.banner-main{
+    align-items: flex-end!important;
+}
+
+.banner-content{
+    margin-bottom: 20px;
 }
 
 // BUTTONS
@@ -12,21 +20,81 @@ header .logo{
     box-shadow: none!important;
 }
 
+// BANNER
+.banner-content{
+    border-radius: 10px;
+}
+
 // BLOG HOME
 .home .blog-content h5{
     min-height: 80px;
 }
 
-.blog-block{
+.home .blog-block{
     border-radius: 3px;
 }
 
-.blog-img{
+.home .blog-img{
     border-radius: 3px 3px 0 0; 
 }
 
-.blog-img img{
-    border-radius: 3px 3px 0 0; 
+.home .blog-img:after{
+    border-radius: 10px;
+}
+
+.home .blog-img img{
+    border-radius: 10px 10px 0 0; 
+}
+
+.blog-slider{
+    .slick-track{
+        padding: 10px 0;
+
+        .slick-slide{
+            border-radius: 10px;
+    
+            div{
+                border-radius: 10px; 
+            }
+        }
+    }
+}
+
+// ABOUT SECTION HOME
+.about-section{
+    .heading{
+        margin-bottom: 20px!important;
+    }
+}
+
+// CLIENT SECTION HOME
+.client-section{
+    .heading-two{
+        h3{
+            font-size: 14px!important;
+        }
+    }
+}
+
+// LONDON PAGE
+.listing-block-part .each-block .list-block, .listing-block-part .each-block .list-block .block-img img{
+    border-radius: 10px;
+}
+
+// LISTINGS
+.property-main .wre-items.grid-view li .inner-container .image img{
+    border-radius: 10px 10px 0 0;
+}
+
+.property-main .wre-items.grid-view li .inner-container{
+    border-radius: 10px;
+}
+
+// GALLERY
+.gallery-block{
+    img{
+        border-radius: 10px;
+    }
 }
 
 // BLOG RESTRUCTURE
@@ -35,10 +103,16 @@ header .logo{
         width: 100%!important;
 
         .blog-inner{
-            display: flex;
+            display: flex; border-radius: 10px;
 
             .blog-img{
                 width: 40%;
+
+                &:after{
+                    border-radius: 10px;
+                }
+
+                img{border-radius: 10px;}
 
                 .news-sticker{
                     position: absolute; top: 0; background: black; color: white; padding: 5px 10px; font-weight: 700;
@@ -83,6 +157,12 @@ header .logo{
     }
 }
 
+// SINGLE POST
+.single-post{
+    .about-section{
+        padding-top: 140px;
+    }
+}
 
 
 // ACCREDITATION LOGOS
@@ -98,4 +178,8 @@ header .logo{
 // FOOTER
 .social-block{
     min-width: 130px;
+}
+
+.footer-two-inner > div:first-child{
+    width: 30%;
 }
