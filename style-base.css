@@ -8,6 +8,11 @@ header {
 header .logo {
   margin-bottom: 16px !important;
 }
+@media screen and (max-width: 600px) {
+  header .logo {
+    margin: 5px 0 !important;
+  }
+}
 
 .banner-main {
   align-items: flex-end !important;
@@ -147,6 +152,10 @@ header .logo {
   min-height: 67px;
   display: flex;
   align-items: center;
+}
+
+.property-data .wre-search-form .search-input, .property-data .wre-select-wrap select {
+  border: none !important;
 }
 
 .social-block {

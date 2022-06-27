@@ -5,6 +5,8 @@ header{
 
 header .logo{
     margin-bottom: 16px!important;
+
+    @media screen and (max-width: 600px){margin: 5px 0!important;}
 }
 
 .banner-main{
@@ -173,6 +175,10 @@ header .logo{
 // PROPERTY SEARCH
 .property-main .wre-items li .inner-container .address{
     min-height: 67px; display: flex; align-items: center;
+}
+
+.property-data .wre-search-form .search-input, .property-data .wre-select-wrap select{
+    border: none!important;
 }
 
 // FOOTER
