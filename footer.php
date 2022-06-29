@@ -13,6 +13,10 @@
 
 ?>
  </div> <!-- wrapper body -->
+    <div class="insta-feed">
+        <?php echo do_shortcode('[instagram-feed feed=1]') ?>
+    </div>
+
     <footer>
         <div class="footer-top bg-gray">
             <div class="container">
