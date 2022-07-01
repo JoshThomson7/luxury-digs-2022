@@ -107,7 +107,8 @@
 				) ); ?>
             </ul>
         </div>
-    </nav><!-- Mobile Menu end -->
+    </nav>
+    <!-- Mobile Menu end -->
 <?php wp_footer(); ?>
 </body>
 </html>

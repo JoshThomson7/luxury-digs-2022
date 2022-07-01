@@ -29,6 +29,7 @@ $favicon = get_field('header_favicon','option');
     <link href="<?php echo get_template_directory_uri(); ?>/css/lightbox.min.css" rel="stylesheet" />
     <link href="<?php echo get_template_directory_uri(); ?>/css/lightbox.min.css" rel="stylesheet" />
     <link href="<?php echo get_template_directory_uri(); ?>/style-base.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
 
     <!-- <link href="<?php //echo get_template_directory_uri(); ?>/css/style.css" rel="stylesheet" /> -->
     <!-- <link href="<?php //echo get_template_directory_uri(); ?>/css/responsive.css" rel="stylesheet" /> -->

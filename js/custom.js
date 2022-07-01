@@ -3,22 +3,7 @@
 $=jQuery;
 jQuery(document).ready(function () {
 
-    //  The menu
-    jQuery('#menu12').mmenu({
-        extensions: ['effect-slide-menu', 'pageshadow'],
-        searchfield: false,
-        counters: false,
-        offCanvas: {
-            position: 'right',
-        }
-    });
-    var API = jQuery('#menu12').data('mmenu');
-    jQuery('#nav-icon1').click(function () {
-        API.close();
-    });
-    //  The menu End
-
-    jQuery(".blog-slider").slick({
+    $(".blog-slider").slick({
         dots: false,
         arrows: true,
         infinite: true,
@@ -50,13 +35,28 @@ jQuery(document).ready(function () {
   ]
     });
 
-    jQuery(".testimonials-slider").slick({
+    $(".testimonials-slider").slick({
         dots: false,
         arrows: true,
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1
     });
+
+    //  The menu
+    $('#menu12').mmenu({
+        extensions: ['effect-slide-menu', 'pageshadow'],
+        searchfield: false,
+        counters: false,
+        offCanvas: {
+            position: 'right',
+        }
+    });
+    var API = jQuery('#menu12').data('mmenu');
+    jQuery('#nav-icon1').click(function () {
+        API.close();
+    });
+    //  The menu End
 
 });
 
