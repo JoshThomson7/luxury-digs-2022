@@ -1,12 +1,12 @@
 //  HEADER BORDER
 header{
-    border-bottom: none!important; padding: 5px 0 0!important; background: rgba(255, 255, 255, 0.7)!important; position: fixed!important;
+    border-bottom: none!important; padding: 5px 0 0!important; background: rgba(255, 255, 255, 0.7)!important; position: fixed!important; z-index: 999999999;
 }
 
 header .logo{
     margin-bottom: 16px!important;
 
-    @media screen and (max-width: 600px){margin: 5px 0!important;}
+    @media screen and (max-width: 600px){margin: 5px 0!important;} 
 }
 
 .banner-main{

@@ -52,14 +52,16 @@ get_header();
 				<p>If you are a resident in one of our properties and would like to report a problem, please click on this button</p>
 			</div>
 			
-		</div>	
-		<?php $location = get_field('contact_map');
+		</div>
+		<div id="googleMap">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9929.799499514273!2d-0.14597173107411346!3d51.52330797963779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b28e5ecf187%3A0x4625bd9dd32f1a21!2sLuxury%20Digs!5e0!3m2!1sen!2suk!4v1657187484241!5m2!1sen!2suk" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>		</div>
+		<!-- <?php $location = get_field('contact_map');
 		if( $location) { ?>
 		<div id="googleMap" style="width:100%;height:400px;"></div>
-		<?php } ?>
+		<?php } ?> -->
 	</div>
 </div>
-<script>
+<!-- <script>
  function initMap() {
 	 	var location = '<?php echo json_encode(get_field('contact_map')); ?>';
 		console.log(location);
@@ -78,8 +80,8 @@ get_header();
           map: map
         });
       }
-</script>
+</script> -->
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLtE0oa3Fk39718WMtBKxYxdhu3y1p4jU&callback=initMap"></script>
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLtE0oa3Fk39718WMtBKxYxdhu3y1p4jU&callback=initMap"></script> -->
 <?php
 get_footer();

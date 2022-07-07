@@ -2,21 +2,9 @@
 /*Template Name: gallery page*/
 get_header();
 ?>
-<section class="banner-section" style="background-image: url(https://luxurydigs.co.uk/wp-content/uploads/2019/10/banner.jpg)">
-    <div class="container">
-        <div class="banner-main">
-            <div class="banner-content">
-                <h1>Building Property and Developing Homes for Renters</h1>
-                <p>We are a different type of letting company.</p><a href="https://luxurydigs.co.uk/about-us" class="btn">About us</a>
-            </div>
-        </div>
-    </div><!-- container end -->
-</section>
+<?php echo bannerImage($post->ID); ?>
 <div class="section-pdng">
    <div class="container">
-    <div class="heading text-center">
-        <h2>Gallery</h2>
-    </div>
     <div class="gallery-block">
 
         <?php

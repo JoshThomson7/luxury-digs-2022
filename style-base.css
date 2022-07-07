@@ -3,6 +3,7 @@ header {
   padding: 5px 0 0 !important;
   background: rgba(255, 255, 255, 0.7) !important;
   position: fixed !important;
+  z-index: 999999999;
 }
 
 header .logo {

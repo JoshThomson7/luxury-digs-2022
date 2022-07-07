@@ -23,7 +23,7 @@ get_header();
 			<div class="list-block">
 				<?php if( $inner_loop['london_image'] ) { ?>
 				<div class="block-img">
-					<img src="<?php echo imageResizeNewFunc($inner_loop['london_image']['url'],280,200); ?>">
+					<img src="<?php echo imageResizeNewFunc($inner_loop['london_image']['url'],330,230); ?>">
 				</div>	
 				<?php } ?>
 				<div class="block-content">

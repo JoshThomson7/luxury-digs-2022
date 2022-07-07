@@ -963,6 +963,17 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/js\/slick.min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/js\/slick.min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/js\/touch-keyboard-navigation.js" : {
       "bF" : 0,
       "ft" : 64,

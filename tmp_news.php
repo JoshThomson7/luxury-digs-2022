@@ -6,6 +6,8 @@
 get_header();
 ?>
 <?php echo bannerImage($post->ID); ?>
+
+<!-- MAIN BLOG -->
 <div class="main">
 	<div class="blog-listing-main">
 		<div class="container clearfix cf">
