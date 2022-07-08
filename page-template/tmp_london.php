@@ -8,6 +8,11 @@ get_header();
 <?php bannerImage($post->ID); ?>
 <?php $loops = get_field('london_main_loop',$post->ID);
 	if( !empty($loops) ) { ?>
+<div class="pre-text" style="margin: 20px 0;">
+	<div class="container">
+		<?php the_content(); ?>
+	</div>
+</div>
 <div class="listing-block-part abc">
 	<div class="container">
 		<?php foreach( $loops as $loop ) { ?>

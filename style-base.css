@@ -69,6 +69,13 @@ header .logo {
   font-size: 14px !important;
 }
 
+.page-template-tmp_london .about-section .heading {
+  margin-bottom: 0 !important;
+}
+.page-template-tmp_london .about-section .heading h2 {
+  display: none;
+}
+
 .listing-block-part .each-block .list-block, .listing-block-part .each-block .list-block .block-img img {
   border-radius: 10px;
 }

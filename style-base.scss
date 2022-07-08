@@ -78,6 +78,20 @@ header .logo{
     }
 }
 
+// LOCATIONS
+.page-template-tmp_london{
+    .about-section{
+        
+        .heading{
+            margin-bottom: 0!important;
+
+            h2{
+                display: none;
+            }
+        }
+    }
+}
+
 // LONDON PAGE
 .listing-block-part .each-block .list-block, .listing-block-part .each-block .list-block .block-img img{
     border-radius: 10px;

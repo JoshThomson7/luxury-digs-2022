@@ -419,13 +419,13 @@ function bannerImage($postID)
         </div>
     </div><!-- container end -->
 </section> <!-- banner section end -->
-<section class="about-section text-center">
+<!-- <section class="about-section text-center">
 	<div class="container">
         <div class="heading">
           <h2><?php the_title(); ?></h2>
         </div>
     </div>
-</section>
+</section> -->
     <!-- inner page banner end -->
 <?php } 
 //svg support
