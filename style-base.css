@@ -1,3 +1,10 @@
+.max__width {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 20px;
+}
+
 header {
   border-bottom: none !important;
   padding: 5px 0 0 !important;
@@ -172,4 +179,900 @@ header .logo {
 
 .footer-two-inner > div:first-child {
   width: 30%;
+}
+
+/**
+ * AVB Styles
+ *
+ * @package advanced-video-banners/
+ * @dependency slick.js
+ * @version 1.0
+*/
+section.avb {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+section.avb .avb-banners {
+  position: relative;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease;
+  background: #16267b;
+  overflow: hidden;
+}
+section.avb .avb-banners.slick-initialized {
+  opacity: 1;
+  visibility: visible;
+}
+section.avb .avb-banners .show-on-mobile {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  section.avb .avb-banners .show-on-mobile {
+    display: block;
+  }
+}
+section.avb .avb-banners .hide-on-mobile {
+  display: block;
+}
+@media screen and (max-width: 800px) {
+  section.avb .avb-banners .hide-on-mobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  section.avb .avb-banners.avb-home .avb-banner {
+    align-items: center;
+  }
+}
+section.avb .avb-banners .avb-banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 550px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translateZ(0) scale(1, 1);
+  -webkit-transform: translateZ(0) scale(1, 1);
+  overflow: hidden;
+}
+@media screen and (max-width: 800px) {
+  section.avb .avb-banners .avb-banner {
+    align-items: flex-end;
+  }
+}
+section.avb .avb-banners .avb-banner.avb-25vh {
+  height: 25vh;
+}
+section.avb .avb-banners .avb-banner.avb-26vh {
+  height: 26vh;
+}
+section.avb .avb-banners .avb-banner.avb-27vh {
+  height: 27vh;
+}
+section.avb .avb-banners .avb-banner.avb-28vh {
+  height: 28vh;
+}
+section.avb .avb-banners .avb-banner.avb-29vh {
+  height: 29vh;
+}
+section.avb .avb-banners .avb-banner.avb-30vh {
+  height: 30vh;
+}
+section.avb .avb-banners .avb-banner.avb-31vh {
+  height: 31vh;
+}
+section.avb .avb-banners .avb-banner.avb-32vh {
+  height: 32vh;
+}
+section.avb .avb-banners .avb-banner.avb-33vh {
+  height: 33vh;
+}
+section.avb .avb-banners .avb-banner.avb-34vh {
+  height: 34vh;
+}
+section.avb .avb-banners .avb-banner.avb-35vh {
+  height: 35vh;
+}
+section.avb .avb-banners .avb-banner.avb-36vh {
+  height: 36vh;
+}
+section.avb .avb-banners .avb-banner.avb-37vh {
+  height: 37vh;
+}
+section.avb .avb-banners .avb-banner.avb-38vh {
+  height: 38vh;
+}
+section.avb .avb-banners .avb-banner.avb-39vh {
+  height: 39vh;
+}
+section.avb .avb-banners .avb-banner.avb-40vh {
+  height: 40vh;
+}
+section.avb .avb-banners .avb-banner.avb-41vh {
+  height: 41vh;
+}
+section.avb .avb-banners .avb-banner.avb-42vh {
+  height: 42vh;
+}
+section.avb .avb-banners .avb-banner.avb-43vh {
+  height: 43vh;
+}
+section.avb .avb-banners .avb-banner.avb-44vh {
+  height: 44vh;
+}
+section.avb .avb-banners .avb-banner.avb-45vh {
+  height: 45vh;
+}
+section.avb .avb-banners .avb-banner.avb-46vh {
+  height: 46vh;
+}
+section.avb .avb-banners .avb-banner.avb-47vh {
+  height: 47vh;
+}
+section.avb .avb-banners .avb-banner.avb-48vh {
+  height: 48vh;
+}
+section.avb .avb-banners .avb-banner.avb-49vh {
+  height: 49vh;
+}
+section.avb .avb-banners .avb-banner.avb-50vh {
+  height: 50vh;
+}
+section.avb .avb-banners .avb-banner.avb-51vh {
+  height: 51vh;
+}
+section.avb .avb-banners .avb-banner.avb-52vh {
+  height: 52vh;
+}
+section.avb .avb-banners .avb-banner.avb-53vh {
+  height: 53vh;
+}
+section.avb .avb-banners .avb-banner.avb-54vh {
+  height: 54vh;
+}
+section.avb .avb-banners .avb-banner.avb-55vh {
+  height: 55vh;
+}
+section.avb .avb-banners .avb-banner.avb-56vh {
+  height: 56vh;
+}
+section.avb .avb-banners .avb-banner.avb-57vh {
+  height: 57vh;
+}
+section.avb .avb-banners .avb-banner.avb-58vh {
+  height: 58vh;
+}
+section.avb .avb-banners .avb-banner.avb-59vh {
+  height: 59vh;
+}
+section.avb .avb-banners .avb-banner.avb-60vh {
+  height: 60vh;
+}
+section.avb .avb-banners .avb-banner.avb-61vh {
+  height: 61vh;
+}
+section.avb .avb-banners .avb-banner.avb-62vh {
+  height: 62vh;
+}
+section.avb .avb-banners .avb-banner.avb-63vh {
+  height: 63vh;
+}
+section.avb .avb-banners .avb-banner.avb-64vh {
+  height: 64vh;
+}
+section.avb .avb-banners .avb-banner.avb-65vh {
+  height: 65vh;
+}
+section.avb .avb-banners .avb-banner.avb-66vh {
+  height: 66vh;
+}
+section.avb .avb-banners .avb-banner.avb-67vh {
+  height: 67vh;
+}
+section.avb .avb-banners .avb-banner.avb-68vh {
+  height: 68vh;
+}
+section.avb .avb-banners .avb-banner.avb-69vh {
+  height: 69vh;
+}
+section.avb .avb-banners .avb-banner.avb-70vh {
+  height: 70vh;
+}
+section.avb .avb-banners .avb-banner.avb-71vh {
+  height: 71vh;
+}
+section.avb .avb-banners .avb-banner.avb-72vh {
+  height: 72vh;
+}
+section.avb .avb-banners .avb-banner.avb-73vh {
+  height: 73vh;
+}
+section.avb .avb-banners .avb-banner.avb-74vh {
+  height: 74vh;
+}
+section.avb .avb-banners .avb-banner.avb-75vh {
+  height: 75vh;
+}
+section.avb .avb-banners .avb-banner.avb-76vh {
+  height: 76vh;
+}
+section.avb .avb-banners .avb-banner.avb-77vh {
+  height: 77vh;
+}
+section.avb .avb-banners .avb-banner.avb-78vh {
+  height: 78vh;
+}
+section.avb .avb-banners .avb-banner.avb-79vh {
+  height: 79vh;
+}
+section.avb .avb-banners .avb-banner.avb-80vh {
+  height: 80vh;
+}
+section.avb .avb-banners .avb-banner.avb-81vh {
+  height: 81vh;
+}
+section.avb .avb-banners .avb-banner.avb-82vh {
+  height: 82vh;
+}
+section.avb .avb-banners .avb-banner.avb-83vh {
+  height: 83vh;
+}
+section.avb .avb-banners .avb-banner.avb-84vh {
+  height: 84vh;
+}
+section.avb .avb-banners .avb-banner.avb-85vh {
+  height: 85vh;
+}
+section.avb .avb-banners .avb-banner.avb-86vh {
+  height: 86vh;
+}
+section.avb .avb-banners .avb-banner.avb-87vh {
+  height: 87vh;
+}
+section.avb .avb-banners .avb-banner.avb-88vh {
+  height: 88vh;
+}
+section.avb .avb-banners .avb-banner.avb-89vh {
+  height: 89vh;
+}
+section.avb .avb-banners .avb-banner.avb-90vh {
+  height: 90vh;
+}
+section.avb .avb-banners .avb-banner.avb-91vh {
+  height: 91vh;
+}
+section.avb .avb-banners .avb-banner.avb-92vh {
+  height: 92vh;
+}
+section.avb .avb-banners .avb-banner.avb-93vh {
+  height: 93vh;
+}
+section.avb .avb-banners .avb-banner.avb-94vh {
+  height: 94vh;
+}
+section.avb .avb-banners .avb-banner.avb-95vh {
+  height: 95vh;
+}
+section.avb .avb-banners .avb-banner.avb-96vh {
+  height: 96vh;
+}
+section.avb .avb-banners .avb-banner.avb-97vh {
+  height: 97vh;
+}
+section.avb .avb-banners .avb-banner.avb-98vh {
+  height: 98vh;
+}
+section.avb .avb-banners .avb-banner.avb-99vh {
+  height: 99vh;
+}
+section.avb .avb-banners .avb-banner.avb-100vh {
+  height: 100vh;
+}
+section.avb .avb-banners .avb-banner .avb-banner__caption {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+@media screen and (max-width: 800px) {
+  section.avb .avb-banners .avb-banner .avb-banner__caption {
+    align-items: flex-start;
+    flex: 2;
+  }
+  section.avb .avb-banners .avb-banner .avb-banner__caption .max__width {
+    height: 100%;
+  }
+}
+section.avb .avb-banners .avb-banner .avb-banner__caption .avb-banner__caption-wrap {
+  width: 50%;
+  margin-top: 60px;
+}
+@media screen and (max-width: 800px) {
+  section.avb .avb-banners .avb-banner .avb-banner__caption .avb-banner__caption-wrap {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
+section.avb .avb-banners .avb-banner .avb-banner__caption h1,
+section.avb .avb-banners .avb-banner .avb-banner__caption h2 {
+  font-size: 55px;
+  font-weight: 900;
+  color: #fff;
+  padding: 0 0 10px;
+  line-height: 60px;
+}
+@media screen and (max-width: 800px) {
+  section.avb .avb-banners .avb-banner .avb-banner__caption h1,
+section.avb .avb-banners .avb-banner .avb-banner__caption h2 {
+    font-size: 32px;
+    line-height: 35px;
+  }
+}
+section.avb .avb-banners .avb-banner .avb-banner__caption h3 {
+  font-size: 13px;
+  font-weight: 500;
+  color: #16267b;
+  padding: 0 0 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+section.avb .avb-banners .avb-banner .avb-banner__caption p {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 25px;
+  padding: 10px 0 0;
+  padding-right: 25%;
+  letter-spacing: 0.5px;
+}
+@media screen and (max-width: 800px) {
+  section.avb .avb-banners .avb-banner .avb-banner__caption p {
+    padding: 0;
+    font-size: 21px;
+    line-height: 27px;
+  }
+}
+section.avb .avb-banners .avb-banner .avb-banner__caption p a {
+  color: #fff;
+  border-bottom: 1px #fff solid;
+}
+section.avb .avb-banners .avb-banner .avb-banner__caption .avb-banner__caption-actions {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-start;
+}
+@media screen and (max-width: 800px) {
+  section.avb .avb-banners .avb-banner .avb-banner__caption .avb-banner__caption-actions {
+    margin-top: auto;
+    width: 100%;
+  }
+}
+section.avb .avb-banners .avb-banner .avb-banner__caption .avb-banner__caption-actions a {
+  display: block;
+  padding: 16px 60px;
+  background: #16267b;
+  color: #fff;
+  font-weight: 800;
+  font-size: 15px;
+  text-align: center;
+  border: none;
+  text-transform: none;
+}
+section.avb .avb-banners .avb-banner .avb-banner__caption .avb-banner__caption-actions a:hover {
+  background: #1a2d91;
+}
+@media screen and (max-width: 800px) {
+  section.avb .avb-banners .avb-banner .avb-banner__caption .avb-banner__caption-actions a {
+    width: 100%;
+    padding: 18px;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+}
+section.avb .avb-banners .avb-banner .avb-banner__media {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+section.avb .avb-banners .avb-banner .avb-banner__media .avb-banner__medium {
+  width: 100%;
+  height: 100%;
+  animation: slideOut 0.4s cubic-bezier(0.4, 0.29, 0.01, 1);
+  position: relative;
+}
+section.avb .avb-banners .avb-banner .avb-banner__media .avb-banner__medium.image {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.8s ease;
+}
+section.avb .avb-banners .avb-banner .avb-banner__media .avb-banner__medium.image img {
+  opacity: 0;
+  visibility: hidden;
+}
+section.avb .avb-banners .avb-banner .avb-banner__media video {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%) scale(1.15);
+}
+section.avb .avb-banners .avb-banner .avb-banner__media iframe {
+  position: relative;
+  pointer-events: none;
+}
+section.avb .avb-banners .avb-banner .avb-banner__media .loading {
+  position: absolute;
+  top: 44%;
+  left: 0;
+  width: 100%;
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-100 {
+  background: #16267b;
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-99 {
+  background: rgba(22, 38, 123, 0.99);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-98 {
+  background: rgba(22, 38, 123, 0.98);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-97 {
+  background: rgba(22, 38, 123, 0.97);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-96 {
+  background: rgba(22, 38, 123, 0.96);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-95 {
+  background: rgba(22, 38, 123, 0.95);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-94 {
+  background: rgba(22, 38, 123, 0.94);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-93 {
+  background: rgba(22, 38, 123, 0.93);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-92 {
+  background: rgba(22, 38, 123, 0.92);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-91 {
+  background: rgba(22, 38, 123, 0.91);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-90 {
+  background: rgba(22, 38, 123, 0.9);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-89 {
+  background: rgba(22, 38, 123, 0.89);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-88 {
+  background: rgba(22, 38, 123, 0.88);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-87 {
+  background: rgba(22, 38, 123, 0.87);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-86 {
+  background: rgba(22, 38, 123, 0.86);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-85 {
+  background: rgba(22, 38, 123, 0.85);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-84 {
+  background: rgba(22, 38, 123, 0.84);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-83 {
+  background: rgba(22, 38, 123, 0.83);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-82 {
+  background: rgba(22, 38, 123, 0.82);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-81 {
+  background: rgba(22, 38, 123, 0.81);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-80 {
+  background: rgba(22, 38, 123, 0.8);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-79 {
+  background: rgba(22, 38, 123, 0.79);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-78 {
+  background: rgba(22, 38, 123, 0.78);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-77 {
+  background: rgba(22, 38, 123, 0.77);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-76 {
+  background: rgba(22, 38, 123, 0.76);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-75 {
+  background: rgba(22, 38, 123, 0.75);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-74 {
+  background: rgba(22, 38, 123, 0.74);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-73 {
+  background: rgba(22, 38, 123, 0.73);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-72 {
+  background: rgba(22, 38, 123, 0.72);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-71 {
+  background: rgba(22, 38, 123, 0.71);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-70 {
+  background: rgba(22, 38, 123, 0.7);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-69 {
+  background: rgba(22, 38, 123, 0.69);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-68 {
+  background: rgba(22, 38, 123, 0.68);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-67 {
+  background: rgba(22, 38, 123, 0.67);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-66 {
+  background: rgba(22, 38, 123, 0.66);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-65 {
+  background: rgba(22, 38, 123, 0.65);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-64 {
+  background: rgba(22, 38, 123, 0.64);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-63 {
+  background: rgba(22, 38, 123, 0.63);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-62 {
+  background: rgba(22, 38, 123, 0.62);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-61 {
+  background: rgba(22, 38, 123, 0.61);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-60 {
+  background: rgba(22, 38, 123, 0.6);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-59 {
+  background: rgba(22, 38, 123, 0.59);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-58 {
+  background: rgba(22, 38, 123, 0.58);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-57 {
+  background: rgba(22, 38, 123, 0.57);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-56 {
+  background: rgba(22, 38, 123, 0.56);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-55 {
+  background: rgba(22, 38, 123, 0.55);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-54 {
+  background: rgba(22, 38, 123, 0.54);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-53 {
+  background: rgba(22, 38, 123, 0.53);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-52 {
+  background: rgba(22, 38, 123, 0.52);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-51 {
+  background: rgba(22, 38, 123, 0.51);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-50 {
+  background: rgba(22, 38, 123, 0.5);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-49 {
+  background: rgba(22, 38, 123, 0.49);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-48 {
+  background: rgba(22, 38, 123, 0.48);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-47 {
+  background: rgba(22, 38, 123, 0.47);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-46 {
+  background: rgba(22, 38, 123, 0.46);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-45 {
+  background: rgba(22, 38, 123, 0.45);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-44 {
+  background: rgba(22, 38, 123, 0.44);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-43 {
+  background: rgba(22, 38, 123, 0.43);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-42 {
+  background: rgba(22, 38, 123, 0.42);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-41 {
+  background: rgba(22, 38, 123, 0.41);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-40 {
+  background: rgba(22, 38, 123, 0.4);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-39 {
+  background: rgba(22, 38, 123, 0.39);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-38 {
+  background: rgba(22, 38, 123, 0.38);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-37 {
+  background: rgba(22, 38, 123, 0.37);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-36 {
+  background: rgba(22, 38, 123, 0.36);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-35 {
+  background: rgba(22, 38, 123, 0.35);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-34 {
+  background: rgba(22, 38, 123, 0.34);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-33 {
+  background: rgba(22, 38, 123, 0.33);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-32 {
+  background: rgba(22, 38, 123, 0.32);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-31 {
+  background: rgba(22, 38, 123, 0.31);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-30 {
+  background: rgba(22, 38, 123, 0.3);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-29 {
+  background: rgba(22, 38, 123, 0.29);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-28 {
+  background: rgba(22, 38, 123, 0.28);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-27 {
+  background: rgba(22, 38, 123, 0.27);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-26 {
+  background: rgba(22, 38, 123, 0.26);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-25 {
+  background: rgba(22, 38, 123, 0.25);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-24 {
+  background: rgba(22, 38, 123, 0.24);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-23 {
+  background: rgba(22, 38, 123, 0.23);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-22 {
+  background: rgba(22, 38, 123, 0.22);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-21 {
+  background: rgba(22, 38, 123, 0.21);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-20 {
+  background: rgba(22, 38, 123, 0.2);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-19 {
+  background: rgba(22, 38, 123, 0.19);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-18 {
+  background: rgba(22, 38, 123, 0.18);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-17 {
+  background: rgba(22, 38, 123, 0.17);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-16 {
+  background: rgba(22, 38, 123, 0.16);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-15 {
+  background: rgba(22, 38, 123, 0.15);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-14 {
+  background: rgba(22, 38, 123, 0.14);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-13 {
+  background: rgba(22, 38, 123, 0.13);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-12 {
+  background: rgba(22, 38, 123, 0.12);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-11 {
+  background: rgba(22, 38, 123, 0.11);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-10 {
+  background: rgba(22, 38, 123, 0.1);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-9 {
+  background: rgba(22, 38, 123, 0.09);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-8 {
+  background: rgba(22, 38, 123, 0.08);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-7 {
+  background: rgba(22, 38, 123, 0.07);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-6 {
+  background: rgba(22, 38, 123, 0.06);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-5 {
+  background: rgba(22, 38, 123, 0.05);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-4 {
+  background: rgba(22, 38, 123, 0.04);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-3 {
+  background: rgba(22, 38, 123, 0.03);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-2 {
+  background: rgba(22, 38, 123, 0.02);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-1 {
+  background: rgba(22, 38, 123, 0.01);
+}
+section.avb .avb-banners .avb-banner .avb-banner__overlay.opacity-0 {
+  display: none;
+}
+section.avb .avb-banners.avb-empty {
+  background: #16267b;
+}
+section.avb .avb-banners.avb-empty .avb-banner {
+  min-height: auto;
+  padding: 130px 0 20px;
+}
+section.avb .avb-banners.avb-empty .avb-banner .avb-banner__caption h1, section.avb .avb-banners.avb-empty .avb-banner .avb-banner__caption h2 {
+  font-size: 37px;
+  color: #fff;
+}
+@media screen and (max-width: 500px) {
+  section.avb .avb-banners.avb-empty .avb-banner .avb-banner__caption h1, section.avb .avb-banners.avb-empty .avb-banner .avb-banner__caption h2 {
+    font-size: 28px;
+  }
+}
+section.avb .avb-banners.avb-empty .avb-banner .avb-banner__caption h2 {
+  line-height: 41px;
+}
+section.avb .avb-banners .slick-dots {
+  width: auto;
+  text-align: center;
+  bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 5;
+}
+@media screen and (max-width: 800px) {
+  section.avb .avb-banners .slick-dots {
+    bottom: 30px;
+  }
+}
+section.avb .avb-banners .slick-dots li {
+  vertical-align: top;
+  margin: 0 4px;
+  width: auto;
+  height: auto;
+}
+@media screen and (max-width: 800px) {
+  section.avb .avb-banners .slick-dots li {
+    margin: 0 8px;
+  }
+}
+section.avb .avb-banners .slick-dots li button {
+  width: 15px;
+  height: 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 0 0 transparent;
+  vertical-align: middle;
+  color: #fff;
+  margin: 0;
+  transition: all 0.3s ease;
+  opacity: 1;
+}
+section.avb .avb-banners .slick-dots li button::before {
+  display: none;
+}
+section.avb .avb-banners .slick-dots li button:focus {
+  outline: none;
+}
+section.avb .avb-banners .slick-dots li button:hover {
+  opacity: 1;
+}
+@media screen and (max-width: 800px) {
+  section.avb .avb-banners .slick-dots li button {
+    width: 13px;
+    height: 13px;
+    opacity: 1;
+    background: grey;
+  }
+}
+section.avb .avb-banners .slick-dots li.slick-active button {
+  background: #16267b;
+  opacity: 1;
+}
+section.avb .avb-banners.avb-dots-center .slick-dots {
+  left: 50%;
+  transform: translateY(-50%);
+  justify-content: center;
+}
+section.avb .avb-banners.avb-dots-left .slick-dots {
+  left: 0;
+  justify-content: flex-start;
+  padding-left: calc((100vw - 1375px) / 2);
+}
+@media screen and (max-width: 800px) {
+  section.avb .avb-banners.avb-dots-left .slick-dots {
+    all: none;
+    width: 100%;
+    justify-content: center;
+  }
+}
+section.avb .avb-banners.avb-dots-right .slick-dots {
+  right: 0;
+  justify-content: flex-end;
+  padding-right: calc((100vw - 1375px) / 2);
+}
+@media screen and (max-width: 800px) {
+  section.avb .avb-banners.avb-dots-right .slick-dots {
+    all: none;
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 800px) {
+  section.avb .avb-banners.avb-inner {
+    margin-bottom: 0;
+  }
+  section.avb .avb-banners.avb-inner .avb-banner {
+    height: auto !important;
+    min-height: 200px;
+  }
+  section.avb .avb-banners.avb-inner .avb-banner .avb-banner__caption-actions {
+    margin-top: 20px;
+  }
+}
+section.avb .avb__down-arrow {
+  position: absolute;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  bottom: 35px;
+  left: 50%;
+  transform: translateY(-50%);
+}
+@media screen and (max-width: 800px) {
+  section.avb .avb__down-arrow {
+    display: none;
+  }
+}
+section.avb .avb__down-arrow figure {
+  cursor: pointer;
+}
+section.avb .avb__down-arrow figure:hover svg {
+  transition: all 0.3s ease;
+  transform: scale(1.07);
+}
+section.avb .avb__down-arrow svg {
+  transition: all 0.3s ease;
+  transform: scale(1);
+  width: 50px;
+}
+section.avb .avb__down-arrow svg path {
+  stroke: #16267b;
 }

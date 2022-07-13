@@ -1,215 +1,3 @@
-//  HEADER BORDER
-.max__width{
-    max-width: 1400px; margin: 0 auto; width: 100%; padding: 0 20px;
-}
- 
-header{
-    border-bottom: none!important; padding: 5px 0 0!important; background: rgba(255, 255, 255, 0.7)!important; position: fixed!important; z-index: 999999999;
-}
-
-header .logo{
-    margin-bottom: 16px!important;
-
-    @media screen and (max-width: 600px){margin: 5px 0!important;} 
-}
-
-.banner-main{
-    align-items: flex-end!important;
-}
-
-.banner-content{
-    margin-bottom: 20px;
-}
-
-// BUTTONS
-.btn, .btn:visited{
-    box-shadow: none!important;
-}
-
-// BANNER
-.banner-content{
-    border-radius: 10px;
-}
-
-// BLOG HOME
-.home .blog-content h5{
-    min-height: 80px;
-}
-
-.home .blog-block{
-    border-radius: 3px;
-}
-
-.home .blog-img{
-    border-radius: 3px 3px 0 0; 
-}
-
-.home .blog-img:after{
-    border-radius: 10px;
-}
-
-.home .blog-img img{
-    border-radius: 10px 10px 0 0; 
-}
-
-.blog-slider{
-    .slick-track{
-        padding: 10px 0;
-
-        .slick-slide{
-            border-radius: 10px;
-    
-            div{
-                border-radius: 10px; 
-            }
-        }
-    }
-}
-
-// ABOUT SECTION HOME
-.about-section{
-    .heading{
-        margin-bottom: 20px!important;
-    }
-}
-
-// CLIENT SECTION HOME
-.client-section{
-    .heading-two{
-        h3{
-            font-size: 14px!important;
-        }
-    }
-}
-
-// LOCATIONS
-.page-template-tmp_london{
-    .about-section{
-        
-        .heading{
-            margin-bottom: 0!important;
-
-            h2{
-                display: none;
-            }
-        }
-    }
-}
-
-// LONDON PAGE
-.listing-block-part .each-block .list-block, .listing-block-part .each-block .list-block .block-img img{
-    border-radius: 10px;
-}
-
-// LISTINGS
-.property-main .wre-items.grid-view li .inner-container .image img{
-    border-radius: 10px 10px 0 0;
-}
-
-.property-main .wre-items.grid-view li .inner-container{
-    border-radius: 10px;
-}
-
-// GALLERY
-.gallery-block{
-    img{
-        border-radius: 10px;
-    }
-}
-
-// BLOG RESTRUCTURE
-.blog-news-page{
-    .blog-block{
-        width: 100%!important;
-
-        .blog-inner{
-            display: flex; border-radius: 10px;
-
-            .blog-img{
-                width: 40%;
-
-                &:after{
-                    border-radius: 10px;
-                }
-
-                img{border-radius: 10px;}
-
-                .news-sticker{
-                    position: absolute; top: 0; background: black; color: white; padding: 5px 10px; font-weight: 700;
-                }
-            }
-
-            .blog-content{
-                width: 60%; padding: 20px!important; display: flex; flex-direction: column; justify-content: center;
-
-                .category{
-
-                    .post-categories{
-                        margin: 0;
-
-                        li{
-                            list-style: none;
-
-                            a{
-                                color: #16267b;
-                            }
-                        }
-                    }
-                }
-
-                .content{
-                    margin-top: 10px;
-                }
-
-                .date{
-                    margin-top: 10px;
-
-                    p{
-                        color: #626262!important;
-                    }
-                }
-
-                .btn{
-                    position: relative!important; bottom: 0!important; left: 0!important;
-                }
-            }
-        }
-    }
-}
-
-// SINGLE POST
-.single-post{
-    .about-section{
-        padding-top: 140px;
-    }
-}
-
-
-// ACCREDITATION LOGOS
-.client-inner.about-client-inner{
-    display: flex; justify-content: space-evenly;
-}
-
-// PROPERTY SEARCH
-.property-main .wre-items li .inner-container .address{
-    min-height: 67px; display: flex; align-items: center;
-}
-
-.property-data .wre-search-form .search-input, .property-data .wre-select-wrap select{
-    border: none!important;
-}
-
-// FOOTER
-.social-block{
-    min-width: 130px;
-}
-
-.footer-two-inner > div:first-child{
-    width: 30%;
-}
-
-
-// BANNERS
 /**
  * AVB Styles
  *
@@ -230,8 +18,7 @@ section.avb {
         opacity: 0;
         visibility: hidden;
         transition: all .5s ease;
-        background: #16267b;
-        overflow: hidden;
+        background: $tertiary;
 
         &.slick-initialized {
             opacity: 1;
@@ -240,21 +27,21 @@ section.avb {
 
         .show-on-mobile { 
             display: none;
-            @media screen and (max-width: 800px) {
+            @include breakpoint(cousinbear) {
                 display: block;
             }
         }
 
         .hide-on-mobile { 
             display: block;
-            @media screen and (max-width: 800px) {
+            @include breakpoint(cousinbear) {
                 display: none;
             }
         }
 
         &.avb-home{
             .avb-banner{
-                @media screen and (max-width: 800px){align-items: center;}
+                @include breakpoint(cousinbear){align-items: center;}
             }
         }
 
@@ -269,7 +56,7 @@ section.avb {
             -webkit-transform: translateZ(0) scale(1.0, 1.0);
             overflow: hidden;
 
-            @media screen and (max-width: 800px){align-items: flex-end;}
+            @include breakpoint(cousinbear){align-items: flex-end;}
 
             @for $i from 25 through 100 {
                 &.avb-#{$i}vh {
@@ -285,7 +72,7 @@ section.avb {
                 align-items: center;
                 width: 100%;
 
-                @media screen and (max-width: 800px) { 
+                @include breakpoint(cousinbear) { 
                     align-items: flex-start;
                     flex: 2;
 
@@ -296,25 +83,24 @@ section.avb {
 
                 .avb-banner__caption-wrap { 
                     width: 50%;
-                    margin-top: 60px;
 
-                    @media screen and (max-width: 800px) { 
+                    @include breakpoint(cousinbear) { 
                         width: 100%; margin-bottom: 5px;
                     }
                 }
 
                 h1,
                 h2 { font-size: 55px; font-weight: 900; color:#fff; padding:0 0 10px; line-height: 60px;
-                    @media screen and (max-width: 800px) { 
+                    @include breakpoint(cousinbear) { 
                         font-size: 32px;
                         line-height: 35px;
                     }
                 }
 
-                h3 { font-size: 13px; font-weight: 500; color:#16267b; padding:0 0 10px; text-transform: uppercase; letter-spacing: 1px;}
+                h3 { font-size: 13px; font-weight: 500; color:$secondary; padding:0 0 10px; text-transform: uppercase; letter-spacing: 1px;}
 
                 p { font-size: 17px; color:rgba(white, 0.8); line-height: 25px; padding:10px 0 0; padding-right: 25%; letter-spacing: 0.5px;
-                    @media screen and (max-width: 800px) {
+                    @include breakpoint(cousinbear) {
                         padding: 0;
                         font-size: 21px;
                         line-height: 27px;
@@ -324,12 +110,12 @@ section.avb {
                 }
 
                 .avb-banner__caption-actions { margin-top: 30px; display: flex; justify-content: flex-start;
-                    @media screen and (max-width: 800px) { margin-top: auto; width: 100%;}
+                    @include breakpoint(cousinbear) { margin-top: auto; width: 100%;}
 
-                    a { display: block; padding: 16px 60px; background: #16267b; color: #fff; font-weight: 800; font-size: 15px; text-align: center; border: none; text-transform: none;
-                        &:hover { background: lighten(#16267b, 5%);}
+                    a { display: block; padding: 16px 60px; background: $primary; color: #fff; font-weight: 800; font-size: 15px; text-align: center; border: none; text-transform: none;
+                        &:hover { background: lighten($primary, 5%);}
 
-                        @media screen and (max-width: 800px) { 
+                        @include breakpoint(cousinbear) { 
                             width: 100%;
                             padding: 18px;
                             margin-top: 20px;
@@ -402,7 +188,7 @@ section.avb {
                         @if $i == 100 {
                             display: none;
                         } @else {
-                            background: transparentize(#16267b, $alpha);
+                            background: transparentize($tertiary, $alpha);
                         }
                         
                     }
@@ -414,7 +200,7 @@ section.avb {
 
         /// No Banner
         &.avb-empty { 
-            background: #16267b;
+            background: $tertiary;
 
             .avb-banner {
                 min-height: auto;
@@ -424,7 +210,7 @@ section.avb {
                     h1, h2 { 
                         font-size: 37px;
                         color: #fff;
-                        @media screen and (max-width: 500px){
+                        @include breakpoint(teenbear){
                             font-size: 28px;
                         }
                     }
@@ -443,7 +229,7 @@ section.avb {
             justify-content: flex-end;
             z-index: 5;
 
-            @media screen and (max-width: 800px) {
+            @include breakpoint(cousinbear) {
                 bottom: 30px;
             }
 
@@ -453,7 +239,7 @@ section.avb {
                 width: auto;
                 height: auto;
 
-                @media screen and (max-width: 800px) {
+                @include breakpoint(cousinbear) {
                     margin: 0 8px;
                 }
 
@@ -480,16 +266,16 @@ section.avb {
                         opacity: 1;
                     }
 
-                    @media screen and (max-width: 800px) {
+                    @include breakpoint(cousinbear) {
                         width: 13px;
                         height: 13px;
                         opacity: 1;
-                        background: grey;
+                        background: $lightgrey;
                     }
                 }
                 &.slick-active {
                     button {
-                        background: #16267b;
+                        background: $secondary;
                         opacity: 1;
                     }
                 }
@@ -510,7 +296,7 @@ section.avb {
                 justify-content: flex-start;
                 padding-left: calc((100vw - 1375px) / 2);
 
-                @media screen and (max-width: 800px) {
+                @include breakpoint(cousinbear) {
                     all: none;
                     width: 100%;
                     justify-content: center;
@@ -524,7 +310,7 @@ section.avb {
                 justify-content: flex-end;
                 padding-right: calc((100vw - 1375px) / 2);
                 
-                @media screen and (max-width: 800px) {
+                @include breakpoint(cousinbear) {
                     all: none;
                     width: 100%;
                     justify-content: center;
@@ -533,7 +319,7 @@ section.avb {
         }
 
         &.avb-inner {
-            @media screen and (max-width: 800px) {
+            @include breakpoint(cousinbear) {
                 margin-bottom: 0;
 
                 .avb-banner { 
@@ -557,7 +343,7 @@ section.avb {
         left: 50%;
         transform: translateY(-50%);
 
-        @media screen and (max-width: 800px) {
+        @include breakpoint(cousinbear) {
             display: none;
         }
 
@@ -577,9 +363,26 @@ section.avb {
             transform: scale(1);
             width: 50px;
             path {
-                stroke: #16267b;
+                stroke: $secondary;
             }
         }
     }
 
 }
+
+// @keyframes slideOut {
+//     from {
+//       filter:blur(15px);
+//     }
+//     to {
+//         filter:blur(0);
+//     }
+// }
+// @keyframes slideOut {
+//     from {
+//         filter:blur(0);
+//     }
+//     to {
+//         filter:blur(15px);
+//     }
+// }

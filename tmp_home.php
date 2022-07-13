@@ -4,25 +4,8 @@
 */
 get_header(); ?>
 <div class="main-body">
-	<?php $banner = get_field('home_banner_image'); ?>
-        <section class="banner-section" style="background-image: url(<?php echo $banner['url']; ?>)">
-            <div class="container">
-                <div class="banner-main">
-                    <div class="banner-content">
-                        <?php if( get_field('home_banner_title') ) { ?>
-                            <h1><?php echo get_field('home_banner_title'); ?></h1>
-                        <?php } ?>
-                        <?php if( get_field('home_banner_content') ) { ?>
-                            <p><?php echo get_field('home_banner_content'); ?></p>
-                        <?php } ?>
-                        <?php $btn = get_field('home_banner_button'); 
-                            if( $btn ) { ?>
-                            <a href="<?php echo $btn['url']; ?>" class="btn"><?php echo $btn['title']; ?></a>
-                        <?php } ?>
-                    </div>
-                </div>
-            </div><!-- container end -->
-        </section> <!-- banner section end -->
+        <?php AVB::avb_banners(); ?>
+
         <section class="about-section text-center">
             <div class="container">
                 <?php if( get_field('home_welcome_title') ) { ?>

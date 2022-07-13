@@ -9,6 +9,9 @@
  * @since 1.0.0
  */
 
+// Video Banners
+include('modules/advanced-video-banners/functions/class-avb.php');
+
 /**
  * Twenty Nineteen only works in WordPress 4.7 or later.
  */
@@ -228,11 +231,12 @@ function twentynineteen_scripts() {
 	wp_style_add_data( 'twentynineteen-style', 'rtl', 'replace' );
 
 	//Other JS
-	wp_enqueue_script( 'twentynineteen-custom', get_theme_file_uri( '/js/custom.js' ), array(), '1.1', true );
 	wp_enqueue_script( 'twentynineteen-lightbox', get_theme_file_uri( '/js/lightbox-plus-jquery.min.js' ), array(), '1.1', true );
 	wp_enqueue_script( 'twentynineteen-slick', get_theme_file_uri( '/js/slick.min.js' ), array(), '1.1', true );
 	wp_enqueue_script( 'twentynineteen-mmenu', get_theme_file_uri( '/js/jquery.mmenu.min.js' ), array(), '1.1', true );
 	wp_enqueue_script( 'twentynineteen-eq', get_theme_file_uri( '/js/equal-height.js' ), array(), '1.1', true );
+	wp_enqueue_script( 'twentynineteen-custom', get_theme_file_uri( '/js/custom.js' ), array(), '1.1', true );
+
 
 	if ( has_nav_menu( 'menu-1' ) ) {
 		wp_enqueue_script( 'twentynineteen-priority-menu', get_theme_file_uri( '/js/priority-menu.js' ), array(), '1.1', true );
