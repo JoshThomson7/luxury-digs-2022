@@ -124,9 +124,12 @@ header .logo{
 
         .blog-inner{
             display: flex; border-radius: 10px;
+            @media screen and (max-width: 650px){flex-direction: column;}
 
             .blog-img{
                 width: 40%;
+                @media screen and (max-width: 800px){width: 30%;}
+                @media screen and (max-width: 650px){width: 100%;}
 
                 &:after{
                     border-radius: 10px;
@@ -141,6 +144,8 @@ header .logo{
 
             .blog-content{
                 width: 60%; padding: 20px!important; display: flex; flex-direction: column; justify-content: center;
+                @media screen and (max-width: 800px){width: 70%;}
+                @media screen and (max-width: 650px){width: 100%;}
 
                 .category{
 
