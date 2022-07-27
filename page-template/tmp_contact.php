@@ -16,32 +16,26 @@ get_header();
 		<div class="container">
 			<div class="contact-detail">
 				<div class="address-data">
-				<?php if( get_field('contact_address') ) { ?>
-					<img src="<?php echo get_template_directory_uri(); ?>/images/home-address.png">
-					<div class="contact-address">
-						<p><?php echo get_field('contact_address'); ?></p>
-					</div>
-				<?php } ?>
+					<?php if( get_field('contact_address') ) { ?>
+						<img src="<?php echo get_template_directory_uri(); ?>/images/home-address.png">
+						<div class="contact-address">
+							<p><?php echo get_field('contact_address'); ?></p>
+						</div>
+					<?php } ?>
 				</div>
 				<div class="address-data">
-				<?php if( get_field('contact_toll_free_number') ) { ?>
 					<img src="<?php echo get_template_directory_uri(); ?>/images/telephone.png">
 					<div class="contact-address">
-						<a href="tel:<?php echo get_field('contact_toll_free_number'); ?>" target="_blank"><?php echo get_field('contact_toll_free_number'); ?></a><br>
-					
-				<?php } ?>
-				<?php if( get_field('contact_phone_number') ) { ?>
-					<a href="tel:<?php echo get_field('contact_phone_number'); ?>" target="_blank"><?php echo get_field('contact_phone_number'); ?></a>
+						<a href="tel:<?php echo get_field('contact_toll_free_number'); ?>" target="_blank">
+							<?php echo get_field('contact_toll_free_number'); ?>
+						</a>
 					</div>
-				<?php } ?>
 				</div>
 				<div class="address-data">
-				<?php if( get_field('contact_email') ) { ?>
 					<img src="<?php echo get_template_directory_uri(); ?>/images/message-closed-envelope.png">
 					<div class="contact-address">
 						<a href="mailto:<?php echo get_field('contact_email'); ?>" target="_blank"><?php echo get_field('contact_email'); ?></a>
 					</div>
-				<?php } ?>
 				</div>
 			</div>
 			<div class="contact-form">
